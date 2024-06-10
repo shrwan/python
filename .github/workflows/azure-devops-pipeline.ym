@@ -1,0 +1,12 @@
+on:  
+  push:  
+    branches:  
+      - master  
+- name: Trigger Azure DevOps pipeline  
+ - uses: Azure/pipelines@v1
+  with:
+    azure-devops-project-url: 'https://dev.azure.com/AIZ-Global/GL-Connected%20Living/FR-Software-IDP-Classification'
+    azure-pipeline-name: 'FR-Software-IDP-Classification' # name of the Azure pipeline to be triggered
+    azure-devops-token: '${{ secrets.AZURE_DEVOPS_TOKEN }}'
+
+
