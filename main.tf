@@ -2,7 +2,7 @@
 provider "google" {  
   credentials = "${file("${var.gcp_key_file}")}"
   project  = "softwarization-net"
-  region   = "us-west1"  
+  region   = "us-west1"  ok
 }
 variable "gcp_key_file" {
 }
